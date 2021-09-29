@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>Evetricia Kalala - Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <script
   src="https://kit.fontawesome.com/f97e8f3daf.js" crossorigin="anonymous" >
   </script>
@@ -23,17 +22,66 @@
       <header class="header">
         <div class="header-container container-expand">
           <div class="row col-12">
-            <a class="logo" href="#accueil"></a>
-            <!-- button to open the offcanvas sidebar -->
+            <a class="logo" href="#accueil">      </a>
             <div class="input-container">
               <input type="checkbox" name="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+              <!-- desktop nav -->
+              <div class="header-desktop-nav">
+                <ul class="header-desktop-ul">
+                  <li class="header-desktop-li">
+                    <a class="header-link desktop-link" href="#accueil">
+                      <span class="icon">
+                      </span> 
+                      <span class="header-text">
+                        Acceuil
+                      </span> 
+                    </a>
+                  </li>
+                  <li class="header-desktop-li">
+                    <a class="header-link desktop-link" href="#Profil">
+                      <span class="icon">
+                      </span> 
+                      <span class="header-text">
+                        Profil
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header-desktop-li">
+                    <a class="header-link desktop-link" href="#competences">
+                      <span class="icon">
+                      </span> 
+                      <span class="header-text">
+                        CV
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header-desktop-li">
+                    <a class="header-link desktop-link" href="#portfolio">
+                      <span class="icon">
+                      </span> 
+                      <span class="header-text">
+                        Portfolio
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header-desktop-li">
+                    <a class="header-link desktop-link" href="#contact">
+                      <span class="icon">
+                      </span> 
+                      <span class="header-text">
+                        Contact
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
       <!-- Offcanvas sidebar -->
-      <div class="offcanvas offcanvas-start" id="sideBar">
+      <div class="offcanvas offcanvas-start col-10" id="sideBar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
