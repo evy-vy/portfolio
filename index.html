@@ -22,62 +22,10 @@
       <header class="header">
         <div class="header-container container-fluid">
           <div class="row col-12">
-            <a class="logo" href="#accueil">      </a>
+            <a class="logo" href="#accueil"></a>
             <div class="input-container">
-              <!-- <button type="button" class="btn btn-primary">Portfolio
-                <i class="far fa-eye"></i>
-              </button> -->
-              <input type="checkbox" name="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
-              <!-- desktop nav -->
-              <!-- <div class="header-desktop-nav">
-                <ul class="header-desktop-ul">
-                  <li class="header-desktop-li">
-                    <a class="header-link desktop-link" href="#accueil">
-                      <span class="icon">
-                      </span> 
-                      <span class="header-text">
-                        Acceuil
-                      </span> 
-                    </a>
-                  </li>
-                  <li class="header-desktop-li">
-                    <a class="header-link desktop-link" href="#Profil">
-                      <span class="icon">
-                      </span> 
-                      <span class="header-text">
-                        Profil
-                      </span>
-                    </a>
-                  </li>
-                  <li class="header-desktop-li">
-                    <a class="header-link desktop-link" href="#competences">
-                      <span class="icon">
-                      </span> 
-                      <span class="header-text">
-                        CV
-                      </span>
-                    </a>
-                  </li>
-                  <li class="header-desktop-li">
-                    <a class="header-link desktop-link" href="#portfolio">
-                      <span class="icon">
-                      </span> 
-                      <span class="header-text">
-                        Portfolio
-                      </span>
-                    </a>
-                  </li>
-                  <li class="header-desktop-li">
-                    <a class="header-link desktop-link" href="#contact">
-                      <span class="icon">
-                      </span> 
-                      <span class="header-text">
-                        Contact
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div> -->
+              <input type="checkbox" name="nav-btn" id="headerBtn" data-bs-toggle="offcanvas" data-bs-target="#sideBar"
+              dataset= "::after">
             </div>
           </div>
         </div>
@@ -86,7 +34,7 @@
       <!-- Offcanvas sidebar -->
       <div class="offcanvas offcanvas-start col-10" id="sideBar">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="offcanavas-ul">
@@ -101,7 +49,7 @@
               </a>
             </li>
             <li class="offcanvas-li">
-              <a class="header-link" href="#Profil">
+              <a class="header-link" href="#profil">
                 <span class="icon">
                   <i class="fas fa-user"></i>
                 </span> 
@@ -144,27 +92,41 @@
         </div>
       </div>
       <!-- main -->
-      <main class="profil">
-        <article class="profil-container">
-          <div class="first-circle col-md-4 col-xl-3">
-            <img class="photo-portfolio" src="./css/ressources/evetricia__kalala.webp" alt="une photo d'Evetricia Kalala souriante">
+      <main class="main-page" >
+        <article id="accueil">
+          <div class="accueil-container">
+            <div class="accueil-photo-container col-md-4 col-xl-3">
+            <img class="photo-portfolio-blob" src="./css/ressources/evetricia__kalala.webp" alt="une photo d'Evetricia Kalala souriante">
           </div>
-          <div class="greetingAndIntroducing col-md-8">
+          <div class="greeting-container col-md-8">
             <span class="greeting">Bonjour,</span>
             <h1 id="title"><span class="greeting"></span></h1>
             <span id="stack"></span>
           </div> 
         </article>
+        </div>
         <div class="portfolio-btn-container">
           <a href="#portfolio" class="portfolio-btn btn btn-primary">Portfolio 
           <i class="far fa-eye"></i>
           </a>
         </div>
+        <article id="profil">
+          <h2 class="profil-title">Qui suis-je ?</h2>
+          <div class="profil-text">
+            <!-- C’est à l’âge de 30 ans, lorsque mon petit garçon est né, que la vie m’a confiée la plus belle des responsabilités.<br><br>
+            C’est à ce même moment que s’est réveillée en moi la plus grande des forces:<br><br>
+            Celle d’oser repenser ma vie. Notamment ma vie professionnelle.<br><br>
+            À la suite de l’obtention de mon diplôme de Développeur Web (Bac +2), je suis à la recherche d’un nouveau challenge sur Rennes, sa périphérie et suis également ouverte au full remote pour travailler sur des projets d'ailleurs.<br><br>
+            Autonome, rigoureuse et bonne communicante, je suis passionnée par les nouvelles technologies et les langues étrangères.”  -->
+            Une femme dynamique, souriante et bonne communiquante qui a osé la grande aventure de la reconvertion, dans le but d'exercer le métier qui l'anime: celui de développeuse web. 
+          </div>
+        </article>
       </main>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./app.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="./JS/typewiter.js"></script>
   </body>
 </html>
